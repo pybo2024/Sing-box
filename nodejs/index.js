@@ -61,7 +61,7 @@ function getArchitecture() {
 
 function downloadFile(url, destPath) {
   return new Promise((resolve, reject) => {
-    log(`Downloading: ${url}`);
+    // log(`Downloading: ${url}`);
     
     const file = fs.createWriteStream(destPath);
     
@@ -197,7 +197,7 @@ async function main() {
     });
     
     log(`🌐 HTTP: http://localhost:${PORT}`);
-    log(`📁 Sub: http://localhost:${PORT}/${SUB_PATH}`);
+    // log(`📁 Sub: http://localhost:${PORT}/${SUB_PATH}`);
     
     process.on('SIGINT', () => {
       log('Shutting down...');
