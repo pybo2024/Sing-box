@@ -40,6 +40,7 @@ config = {
     'UPLOAD_URL': os.environ.get('UPLOAD_URL', ''),           # 节点上传地址，需部署merge-sub订阅器项目，例如：https://merge.xxx.com
     'FILE_PATH': os.environ.get('FILE_PATH', '.cache'),       # sub,.txt节点存放目录
     'DISABLE_ARGO': os.environ.get('DISABLE_ARGO', 'false'),  # 是否禁用argo, true为禁用,false为不禁用,默认开启
+    'SHOW_LOG': os.environ.get('SHOW_LOG', 'true'),  # 是否显示日志, true或yes显示用,false或no禁用,默认显示
 }
 
 def sleep(ms):
